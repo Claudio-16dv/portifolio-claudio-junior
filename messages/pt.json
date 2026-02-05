@@ -1,0 +1,47 @@
+{
+  "nav": {
+    "about": "Sobre",
+    "resume": "Currículo",
+    "portfolio": "Portfólio"
+  },
+  "sidebar": {
+    "showContacts": "Mostrar Contatos",
+    "hideContacts": "Ocultar Contatos",
+    "email": "Email",
+    "phone": "Telefone",
+    "location": "Localização"
+  },
+  "about": {
+    "title": "Sobre Mim",
+    "whatIDo": "O que eu faço"
+  },
+  "resume": {
+    "title": "Currículo",
+    "education": "Educação",
+    "experience": "Experiência",
+    "skills": "Minhas Habilidades"
+  },
+  "portfolio": {
+    "title": "Portfólio",
+    "all": "Todos",
+    "webDesign": "Web Design",
+    "applications": "Aplicações",
+    "webDevelopment": "Web Development",
+    "selectCategory": "Selecionar categoria",
+    "viewProject": "Ver Projeto",
+    "private": "Privado",
+    "public": "Público",
+    "technologies": "Tecnologias",
+    "description": "Descrição",
+    "visitSite": "Visitar Site",
+    "viewCode": "Ver Código"
+  },
+  "theme": {
+    "light": "Claro",
+    "dark": "Escuro",
+    "toggle": "Alternar tema"
+  },
+  "language": {
+    "toggle": "Mudar idioma"
+  }
+}
