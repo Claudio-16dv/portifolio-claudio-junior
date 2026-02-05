@@ -1,21 +1,24 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { Languages } from "lucide-react";
 
 export function LanguageToggle() {
   const t = useTranslations("language");
+  const router = useRouter();
 
   const toggleLanguage = () => {
-    const current = document.cookie
-      .split("; ")
-      .find((row) => row.startsWith("locale="))
-      ?.split("=")[1] || "pt";
-    
+    const current =
+      document.cookie
+        .split("; ")
+        .find((row) => row.startsWith("locale="))
+        ?.split("=")[1] || "pt";
+
     const newLocale = current === "pt" ? "en" : "pt";
     document.cookie = `locale=${newLocale};path=/;max-age=31536000`;
-    window.location.reload();
+    router.refresh();
   };
 
   return (

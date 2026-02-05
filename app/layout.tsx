@@ -25,6 +25,11 @@ export default async function RootLayout({
 
   return (
     <html lang={locale} suppressHydrationWarning>
+      <head>
+        <style dangerouslySetInnerHTML={{ __html: `
+          html { background-color: #171717; }
+        `}} />
+      </head>
       <body className={`${poppins.variable} font-sans antialiased`}>
         <NextIntlClientProvider messages={messages}>
           {children}
