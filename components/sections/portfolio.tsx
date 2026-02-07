@@ -91,12 +91,11 @@ export function Portfolio() {
               className="w-full text-left group"
             >
               <figure className="relative w-full aspect-video rounded-2xl overflow-hidden mb-4 bg-secondary">
-                {/* Placeholder - substitua por Image quando tiver as imagens */}
-                <div className="w-full h-full bg-linear-to-br from-neutral-700 to-neutral-900 flex items-center justify-center">
-                  <span className="text-4xl font-bold text-accent-color/30">
-                    {project.title.charAt(0)}
-                  </span>
-                </div>
+                <img
+                  src={project.thumbnail}
+                  alt={project.title}
+                  className="w-full h-full object-cover"
+                />
 
                 {/* Overlay */}
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/50 transition-all flex items-center justify-center">

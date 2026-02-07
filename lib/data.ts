@@ -144,43 +144,133 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    id: "project-1",
-    title: "Dashboard E-commerce",
-    category: "web-development",
-    thumbnail: "/projects/project-1.jpg",
-    images: ["/projects/project-1.jpg"],
+    id: "dancefy-events",
+    title: "Dancefy Events",
+    category: "applications",
+    thumbnail: "/projects/district/tela-login.png",
+    images: [
+      "/projects/district/tela-login.png",
+      "/projects/district/tela-registro-1.png",
+      "/projects/district/tela-registro-2.png",
+      "/projects/district/tela-home.png",
+      "/projects/district/tela-edit-user.png",
+      "/projects/district/tela-minha-inscricao-1.png",
+      "/projects/district/tela-minha-inscricao-2.png",
+      "/projects/district/tela-checkout-1.png",
+      "/projects/district/tela-checkout-2.png",
+      "/projects/district/tela-grupo-1.png",
+      "/projects/district/tela-grupo-2.png",
+      "/projects/district/tela-grupo-3.png",
+      "/projects/district/tela-grupo-4.png",
+      "/projects/district/tela-grupo-5.png",
+      "/projects/district/tela-coreografia-1.png",
+      "/projects/district/tela-coreografia-2.png",
+      "/projects/district/tela-coreografia-3.png",
+      "/projects/district/tela-coreografia-4.png",
+      "/projects/district/tela-coreografia-5.png",
+      "/projects/district/tela-coreografia-6.png",
+      "/projects/district/tela-dashboard.png",
+      "/projects/district/tela-analise-coreografia-1.png",
+      "/projects/district/tela-analise-coreografia-2.png",
+      "/projects/district/tela-analise-coreografia-3.png",
+      "/projects/district/tela-analise-coreografia-4.png",
+      "/projects/district/tela-analise-coreografia-5.png",
+    ],
     isPublic: false,
-    technologies: ["PHP", "Laravel", "MySQL", "Blade", "API REST"],
+    liveUrl: "https://www.dancefy.com.br/H2D26/login",
+    technologies: [
+      "Next.js 14",
+      "React 18",
+      "TypeScript",
+      "Tailwind CSS",
+      "Shadcn/UI",
+      "Strapi CMS",
+      "Pagar.me",
+      "Zod",
+      "Vitest"
+    ],
     description: {
-      pt: "Dashboard para integração de plataformas de e-commerce via API (Mercado Livre e Bling). Sistema completo de gestão de pedidos e estoque.",
-      en: "Dashboard for e-commerce platform integration via API (Mercado Livre and Bling). Complete order and inventory management system."
+      pt: "Plataforma completa para gestão de eventos de dança, desenvolvida para o Hip Hop District. Gerencia inscrições individuais e de grupos competidores, com sistema de créditos, pipeline de validação em camadas, controle de faixa etária inteligente e integração com Pagar.me. Arquitetura DDD com 27+ testes unitários.",
+      en: "Complete platform for dance event management, developed for Hip Hop District. Manages individual and competitor group registrations, with credit system, layered validation pipeline, smart age range control and Pagar.me integration. DDD architecture with 27+ unit tests."
     }
   },
   {
-    id: "project-2",
-    title: "Sistema Web Institucional",
-    category: "web-development",
-    thumbnail: "/projects/project-2.jpg",
-    images: ["/projects/project-2.jpg"],
-    isPublic: false,
-    technologies: ["PHP", "Laravel", "MySQL", "Next.js", "Node.js"],
-    description: {
-      pt: "Sistema web completo com backend em Laravel e frontend em Next.js. Inclui autenticação, gestão de usuários e relatórios.",
-      en: "Complete web system with Laravel backend and Next.js frontend. Includes authentication, user management and reports."
-    }
-  },
-  {
-    id: "project-3",
-    title: "E-commerce Darwin Pet",
+    id: "charles-darwin",
+    title: "Charles Darwin Food - Institucional",
     category: "web-design",
-    thumbnail: "/projects/project-3.jpg",
-    images: ["/projects/project-3.jpg"],
+    thumbnail: "/projects/charles-darwin/charles-darwin-1.png",
+    images: [
+      "/projects/charles-darwin/charles-darwin-1.png",
+      "/projects/charles-darwin/charles-darwin-2.png",
+      "/projects/charles-darwin/charles-darwin-3.png",
+      "/projects/charles-darwin/charles-darwin-4.png",
+      "/projects/charles-darwin/charles-darwin-5.png",
+    ],
     isPublic: true,
-    liveUrl: "https://darwinpet.com.br",
-    technologies: ["HTML", "CSS", "JavaScript", "Bootstrap", "Loja Integrada"],
+    liveUrl: "https://www.charlesdarwin.com.br/",
+    technologies: [
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "jQuery",
+      "Bootstrap 3",
+      "WOW.js",
+      "Animate.css",
+      "Firebase Hosting",
+      "FormSubmit"
+    ],
     description: {
-      pt: "Página institucional e customizações para e-commerce de produtos pet. Design responsivo e otimizado para conversão.",
-      en: "Institutional page and customizations for pet products e-commerce. Responsive design optimized for conversion."
+      pt: "Site institucional para a Charles Darwin Food, empresa de petiscos naturais e produtos de bem-estar para cães. Apresenta a marca, linha de produtos (Instinto Ancestral e Queijo do Himalaia) e direciona para o e-commerce. Inclui formulário de contato integrado e links para redes sociais.",
+      en: "Institutional website for Charles Darwin Food, a company specializing in natural snacks and wellness products for dogs. Showcases the brand, product lines (Instinto Ancestral and Himalayan Cheese) and directs to the e-commerce. Includes integrated contact form and social media links."
+    }
+  },
+  {
+    id: "charles-darwin-ecommerce",
+    title: "Charles Darwin Food - E-commerce",
+    category: "web-development",
+    thumbnail: "/projects/charles-darwin/charles-darwin-6.png",
+    images: [
+      "/projects/charles-darwin/charles-darwin-6.png",
+      "/projects/charles-darwin/charles-darwin-7.png"
+    ],
+    isPublic: true,
+    liveUrl: "https://loja.charlesdarwinfood.com.br/",
+    technologies: [
+      "Loja Integrada",
+      "HTML5",
+      "CSS3",
+      "JavaScript"
+    ],
+    description: {
+      pt: "E-commerce para venda de petiscos naturais e produtos de bem-estar para cães. Sustentação e evolução da loja na plataforma Loja Integrada, com customizações de layout e otimização para conversão.",
+      en: "E-commerce for selling natural snacks and wellness products for dogs. Store maintenance and evolution on Loja Integrada platform, with layout customizations and conversion optimization."
+    }
+  },
+  {
+    id: "salute-sports",
+    title: "Salute Sports",
+    category: "web-development",
+    thumbnail: "/projects/salute/login-tela.png",
+    images: [
+      "/projects/salute/login-tela.png",
+      "/projects/salute/dashboard-tela-1.png",
+      "/projects/salute/dashboard-tela-2.png"
+    ],
+    isPublic: false,
+    technologies: [
+      "PHP 8.3",
+      "Laravel 11",
+      "PostgreSQL",
+      "Blade",
+      "Bootstrap",
+      "Docker",
+      "API Bling",
+      "API Mercado Livre",
+      "OAuth2"
+    ],
+    description: {
+      pt: "Sistema web fullstack para gestão unificada de estoque e vendas de loja de artigos esportivos. Integra dados de 3 plataformas (Bling ERP + 2 contas Mercado Livre) em tempo real, com dashboard centralizado, exportação Excel/PDF, refresh automático de tokens OAuth2 e processamento assíncrono com filas.",
+      en: "Fullstack web system for unified inventory and sales management of a sports store. Integrates data from 3 platforms (Bling ERP + 2 Mercado Livre accounts) in real-time, with centralized dashboard, Excel/PDF export, automatic OAuth2 token refresh and async processing with queues."
     }
   }
 ];
