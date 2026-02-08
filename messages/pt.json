@@ -9,7 +9,8 @@
     "hideContacts": "Ocultar Contatos",
     "email": "Email",
     "phone": "Telefone",
-    "location": "Localização"
+    "location": "Localização",
+    "seniority": "Pleno"
   },
   "about": {
     "title": "Sobre Mim",

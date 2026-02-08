@@ -39,9 +39,14 @@ export function Sidebar() {
           <h1 className="text-foreground text-lg sm:text-xl font-light tracking-wide mb-2 xl:whitespace-nowrap">
             Claudio Junior
           </h1>
-          <p className="text-foreground/90 bg-secondary text-xs font-light px-3 py-1 rounded-lg w-fit xl:mx-auto">
-            {personalInfo.title}
-          </p>
+          <div className="flex items-center gap-2 flex-nowrap xl:justify-center">
+            <p className="text-foreground/90 bg-secondary text-xs font-light px-3 py-1 rounded-lg whitespace-nowrap">
+              {personalInfo.title}
+            </p>
+            <p className="text-foreground/90 bg-secondary text-xs font-light px-3 py-1 rounded-lg whitespace-nowrap">
+              {t("seniority")}
+            </p>
+          </div>
         </div>
 
         {/* Mobile Toggle Button */}

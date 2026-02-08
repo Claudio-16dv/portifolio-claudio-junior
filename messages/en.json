@@ -9,7 +9,8 @@
     "hideContacts": "Hide Contacts",
     "email": "Email",
     "phone": "Phone",
-    "location": "Location"
+    "location": "Location",
+    "seniority": "Mid-level"
   },
   "about": {
     "title": "About Me",
