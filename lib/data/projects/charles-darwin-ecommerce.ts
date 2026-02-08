@@ -4,7 +4,7 @@ export const charlesDarwinEcommerce: Project = {
   id: "charles-darwin-ecommerce",
   title: "Charles Darwin Food - E-commerce",
   category: "web-development",
-  thumbnail: "/projects/charles-darwin/charles-darwin-6.png",
+  thumbnail: "/projects/charles-darwin/charles-darwin-7.png",
   images: [
     "/projects/charles-darwin/charles-darwin-6.png",
     "/projects/charles-darwin/charles-darwin-7.png",
