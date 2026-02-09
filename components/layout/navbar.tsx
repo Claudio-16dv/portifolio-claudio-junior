@@ -46,7 +46,7 @@ export function Navbar({ activePage, onPageChange }: NavbarProps) {
               )}
             >
               <span>{item.icon}</span>
-              <span className="text-sm font-medium lg:text-base">{item.label}</span>
+              <span className="hidden sm:inline text-sm font-medium lg:text-base whitespace-nowrap">{item.label}</span>
             </button>
           </li>
         ))}

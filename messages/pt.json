@@ -1,6 +1,6 @@
 {
   "nav": {
-    "about": "Sobre",
+    "about": "Quem sou eu",
     "resume": "Currículo",
     "portfolio": "Portfólio"
   },
@@ -13,7 +13,7 @@
     "seniority": "Pleno"
   },
   "about": {
-    "title": "Sobre Mim",
+    "title": "Quem sou eu",
     "whatIDo": "O que eu faço"
   },
   "resume": {

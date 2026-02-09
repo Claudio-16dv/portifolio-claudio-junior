@@ -1,6 +1,6 @@
 {
   "nav": {
-    "about": "About",
+    "about": "Who I am",
     "resume": "Resume",
     "portfolio": "Portfolio"
   },
@@ -13,7 +13,7 @@
     "seniority": "Mid-level"
   },
   "about": {
-    "title": "About Me",
+    "title": "Who I am",
     "whatIDo": "What I Do"
   },
   "resume": {
