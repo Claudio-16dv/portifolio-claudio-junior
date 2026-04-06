@@ -25,7 +25,7 @@ export const experience = [
       pt: "A.M.F Consultoria em TI",
       en: "A.M.F IT Consulting",
     },
-    period: "Ago/2024 — Mar/2025",
+    period: "Ago/2022 — Mar/2025",
     description: {
       pt: "Desenvolvimento de sistemas em PHP, Laravel e MySQL. Criação de interfaces com Blade, Next.js e Vue.js. Implementação de endpoints e integrações de APIs.",
       en: "Systems development with PHP, Laravel and MySQL. Interface creation with Blade, Next.js and Vue.js. API endpoints and integrations implementation.",
