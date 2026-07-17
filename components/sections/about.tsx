@@ -2,7 +2,7 @@
 
 import { useTranslations, useLocale } from "next-intl";
 import { Code, Palette, Smartphone, Server } from "lucide-react";
-import { aboutMe, services } from "@/lib/data";
+import { aboutHighlights, aboutMe, services } from "@/lib/data";
 
 const iconMap = {
   code: Code,
@@ -31,6 +31,23 @@ export function About() {
             <p key={index}>{paragraph}</p>
           ))}
         </div>
+      </section>
+
+      {/* Professional snapshot */}
+      <section className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-8">
+        {aboutHighlights.map((highlight) => (
+          <div
+            key={highlight.value.en}
+            className="rounded-xl border border-border bg-secondary/45 px-4 py-3"
+          >
+            <strong className="block text-sm font-medium text-accent-color mb-1">
+              {highlight.value[locale]}
+            </strong>
+            <span className="text-xs font-light text-muted-foreground">
+              {highlight.label[locale]}
+            </span>
+          </div>
+        ))}
       </section>
 
       {/* Services */}

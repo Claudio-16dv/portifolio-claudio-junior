@@ -9,7 +9,10 @@ export const education = [
       pt: "Faculdade Estácio",
       en: "Estácio University",
     },
-    period: "Jul/2025 — Dez/2027",
+    period: {
+      pt: "jul/2025 — dez/2027",
+      en: "Jul 2025 — Dec 2027",
+    },
     description: {
       pt: "Graduação em tecnologia focada em desenvolvimento de software, banco de dados e arquitetura de sistemas.",
       en: "Technology degree focused on software development, databases and systems architecture.",
@@ -25,7 +28,10 @@ export const education = [
       pt: "Cubos Academy",
       en: "Cubos Academy",
     },
-    period: "Fev/2024 — Ago/2024",
+    period: {
+      pt: "fev/2024 — ago/2024",
+      en: "Feb 2024 — Aug 2024",
+    },
     description: {
       pt: "Formação intensiva em design de interfaces e experiência do usuário.",
       en: "Intensive training in interface design and user experience.",

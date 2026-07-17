@@ -129,6 +129,9 @@
   * {
     @apply border-border outline-ring/50;
   }
+  html {
+    background-color: #171717;
+  }
   body {
     @apply bg-background text-foreground font-sans antialiased;
   }

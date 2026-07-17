@@ -7,8 +7,8 @@ export const services = [
       en: "Web Development",
     },
     description: {
-      pt: "Sistemas web completos com PHP, Laravel, Next.js e Vue.js. APIs RESTful e integrações.",
-      en: "Complete web systems with PHP, Laravel, Next.js and Vue.js. RESTful APIs and integrations.",
+      pt: "Aplicações completas, do levantamento das regras de negócio ao backend, frontend, testes e deploy.",
+      en: "Complete applications, from business rule discovery to backend, frontend, testing, and deployment.",
     },
   },
   {
@@ -19,8 +19,8 @@ export const services = [
       en: "Backend & APIs",
     },
     description: {
-      pt: "Desenvolvimento de APIs robustas, integrações com plataformas externas e otimização de banco de dados MySQL.",
-      en: "Robust API development, external platform integrations and MySQL database optimization.",
+      pt: "APIs com PHP, Laravel e Node.js, filas, regras de negócio, integrações e dados em MySQL ou MongoDB.",
+      en: "APIs with PHP, Laravel, and Node.js, including queues, business rules, integrations, and MySQL or MongoDB data.",
     },
   },
   {
@@ -31,20 +31,20 @@ export const services = [
       en: "Frontend & UI",
     },
     description: {
-      pt: "Interfaces modernas e responsivas com Next.js, Vue.js, Blade e Bootstrap.",
-      en: "Modern and responsive interfaces with Next.js, Vue.js, Blade and Bootstrap.",
+      pt: "Interfaces responsivas e componentizadas com Next.js, React, Vue.js, TypeScript, Blade e shadcn/ui.",
+      en: "Responsive, component-based interfaces with Next.js, React, Vue.js, TypeScript, Blade, and shadcn/ui.",
     },
   },
   {
     id: 4,
     icon: "smartphone",
     title: {
-      pt: "E-commerce",
-      en: "E-commerce",
+      pt: "Integrações & Automação",
+      en: "Integrations & Automation",
     },
     description: {
-      pt: "Dashboards e integrações para e-commerce. Experiência com Mercado Livre, Bling e Loja Integrada.",
-      en: "Dashboards and integrations for e-commerce. Experience with Mercado Livre, Bling and Loja Integrada.",
+      pt: "Integrações de e-commerce, webhooks, pipelines de documentos com Python/IA e automações de entrega.",
+      en: "E-commerce integrations, webhooks, Python/AI document pipelines, and delivery automation.",
     },
   },
 ];

@@ -20,7 +20,8 @@
     "title": "Resume",
     "education": "Education",
     "experience": "Experience",
-    "skills": "My Skills"
+    "skills": "Technology Stack",
+    "technologyStack": "Technologies used"
   },
   "portfolio": {
     "title": "Portfolio",

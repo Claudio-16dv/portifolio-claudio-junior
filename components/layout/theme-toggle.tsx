@@ -1,48 +1,52 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useSyncExternalStore } from "react";
 import { Moon, Sun } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useTranslations } from "next-intl";
 
+type Theme = "light" | "dark";
+
+const THEME_CHANGE_EVENT = "portfolio-theme-change";
+
+function getThemeSnapshot(): Theme {
+  const stored = localStorage.getItem("theme");
+
+  if (stored === "light" || stored === "dark") {
+    return stored;
+  }
+
+  return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+}
+
+function subscribeToTheme(onStoreChange: () => void) {
+  const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
+  const handleChange = () => onStoreChange();
+
+  window.addEventListener("storage", handleChange);
+  window.addEventListener(THEME_CHANGE_EVENT, handleChange);
+  mediaQuery.addEventListener("change", handleChange);
+
+  return () => {
+    window.removeEventListener("storage", handleChange);
+    window.removeEventListener(THEME_CHANGE_EVENT, handleChange);
+    mediaQuery.removeEventListener("change", handleChange);
+  };
+}
+
 export function ThemeToggle() {
-  const [mounted, setMounted] = useState(false);
-  const [theme, setTheme] = useState<"light" | "dark">("light");
+  const theme = useSyncExternalStore(subscribeToTheme, getThemeSnapshot, () => "light");
   const t = useTranslations("theme");
 
   useEffect(() => {
-    const stored = localStorage.getItem("theme") as "light" | "dark" | null;
-    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-    const initial = stored || (prefersDark ? "dark" : "light");
-    setTheme(initial);
-    document.documentElement.classList.toggle("dark", initial === "dark");
-    setMounted(true);
-  }, []);
-
-  useEffect(() => {
-    if (mounted) {
-      document.documentElement.classList.toggle("dark", theme === "dark");
-    }
-  }, [theme, mounted]);
+    document.documentElement.classList.toggle("dark", theme === "dark");
+  }, [theme]);
 
   const toggleTheme = () => {
-    const newTheme = theme === "light" ? "dark" : "light";
-    setTheme(newTheme);
+    const newTheme: Theme = theme === "light" ? "dark" : "light";
     localStorage.setItem("theme", newTheme);
+    window.dispatchEvent(new Event(THEME_CHANGE_EVENT));
   };
-
-  // Render placeholder during SSR to avoid hydration mismatch
-  if (!mounted) {
-    return (
-      <Button
-        variant="ghost"
-        size="icon"
-        className="text-muted-foreground hover:text-accent-color"
-      >
-        <Moon className="w-5 h-5" />
-      </Button>
-    );
-  }
 
   return (
     <Button
@@ -50,6 +54,7 @@ export function ThemeToggle() {
       size="icon"
       onClick={toggleTheme}
       title={t("toggle")}
+      aria-label={t("toggle")}
       className="text-muted-foreground hover:text-accent-color"
     >
       {theme === "light" ? <Moon className="w-5 h-5" /> : <Sun className="w-5 h-5" />}

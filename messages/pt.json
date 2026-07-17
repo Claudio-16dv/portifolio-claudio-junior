@@ -20,7 +20,8 @@
     "title": "Currículo",
     "education": "Educação",
     "experience": "Experiência",
-    "skills": "Minhas Habilidades"
+    "skills": "Stack de Tecnologias",
+    "technologyStack": "Tecnologias utilizadas"
   },
   "portfolio": {
     "title": "Portfólio",
