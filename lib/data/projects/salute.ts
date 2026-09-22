@@ -2,7 +2,10 @@ import type { Project } from "../types";
 
 export const salute: Project = {
   id: "salute-sports",
-  title: "Salute Sports",
+  title: {
+    pt: "Salute Sports",
+    en: "Salute Sports",
+  },
   category: "web-development",
   thumbnail: "/projects/salute/login-tela.png",
   images: [
@@ -12,18 +15,18 @@ export const salute: Project = {
   ],
   isPublic: false,
   technologies: [
-    "PHP 8.3",
-    "Laravel 11",
+    "PHP",
+    "Laravel",
     "PostgreSQL",
     "Blade",
     "Bootstrap",
     "Docker",
-    "API Bling",
-    "API Mercado Livre",
-    "OAuth2",
+    "Bling ERP API",
+    "Mercado Livre API",
+    "OAuth2"
   ],
   description: {
-    pt: "Sistema web fullstack para gestão unificada de estoque e vendas de loja de artigos esportivos. Integra dados de 3 plataformas (Bling ERP + 2 contas Mercado Livre) em tempo real, com dashboard centralizado, exportação Excel/PDF, refresh automático de tokens OAuth2 e processamento assíncrono com filas.",
-    en: "Fullstack web system for unified inventory and sales management of a sports store. Integrates data from 3 platforms (Bling ERP + 2 Mercado Livre accounts) in real-time, with centralized dashboard, Excel/PDF export, automatic OAuth2 token refresh and async processing with queues.",
+    pt: "Dashboard autenticado desenvolvido individualmente com PHP, Laravel, Blade e PostgreSQL, da modelagem de dados à implantação em produção. Integra duas contas do Mercado Livre e o Bling ERP para consolidar estoque, vendas e faturamento em uma única visão operacional. A solução segue em uso pelo cliente, com manutenção e melhorias pontuais após a entrega.",
+    en: "Authenticated dashboard independently built with PHP, Laravel, Blade, and PostgreSQL, from data modeling through production deployment. Integrates two Mercado Livre accounts and Bling ERP to consolidate inventory, sales, and total revenue into a single operational view. The client continues to use the system, with occasional maintenance and feature updates after launch."
   },
 };

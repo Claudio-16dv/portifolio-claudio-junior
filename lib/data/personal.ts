@@ -1,10 +1,16 @@
 export const personalInfo = {
   name: "Claudio Junior",
-  title: "Full Stack Developer",
+  title: {
+    pt: "Desenvolvedor Full Stack",
+    en: "Full-Stack Software Engineer",
+  },
   initials: "CJ",
   email: "claudiojunior2302@uol.com.br",
   phone: "+55 (11) 9 1051-0344",
-  location: "Jundiaí - SP, Brasil",
+  location: {
+    pt: "Jundiaí - SP, Brasil",
+    en: "Jundiaí - SP, Brazil",
+  },
   social: {
     github: "https://github.com/Claudio-16dv",
     linkedin: "https://linkedin.com/in/claudiojunior16",

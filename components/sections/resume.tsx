@@ -1,8 +1,8 @@
 "use client";
 
 import { useTranslations, useLocale } from "next-intl";
-import { BookOpen, BriefcaseBusiness, Layers3 } from "lucide-react";
-import { education, experience, skills } from "@/lib/data";
+import { BookOpen, BriefcaseBusiness, Layers3, Award, Languages } from "lucide-react";
+import { education, experience, skills, certifications, languages } from "@/lib/data";
 
 export function Resume() {
   const t = useTranslations("resume");
@@ -66,6 +66,41 @@ export function Resume() {
             />
           ))}
         </ol>
+      </section>
+
+      {/* Languages */}
+      <section className="mb-8">
+        <div className="flex items-center gap-4 mb-6">
+          <div className="w-12 h-12 rounded-xl bg-secondary flex items-center justify-center text-accent-color shadow-lg">
+            <Languages className="w-5 h-5" />
+          </div>
+          <h3 className="text-lg sm:text-xl font-medium text-foreground">{t("languages")}</h3>
+        </div>
+        <dl className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          {languages.map((language) => (
+            <div key={language.id} className="rounded-2xl border border-border bg-card p-5 shadow-md">
+              <dt className="text-sm font-medium text-foreground">{language.name[locale]}</dt>
+              <dd className="mt-1 text-sm text-muted-foreground">{language.description[locale]}</dd>
+            </div>
+          ))}
+        </dl>
+      </section>
+
+      {/* Certifications */}
+      <section className="mb-8">
+        <div className="flex items-center gap-4 mb-6">
+          <div className="w-12 h-12 rounded-xl bg-secondary flex items-center justify-center text-accent-color shadow-lg">
+            <Award className="w-5 h-5" />
+          </div>
+          <h3 className="text-lg sm:text-xl font-medium text-foreground">{t("certifications")}</h3>
+        </div>
+        <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          {certifications.map((certification) => (
+            <li key={certification.id} className="rounded-2xl border border-border bg-card p-5 text-sm text-foreground shadow-md">
+              {certification.title[locale]}
+            </li>
+          ))}
+        </ul>
       </section>
 
       {/* Skills */}

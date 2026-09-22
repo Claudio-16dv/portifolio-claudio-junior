@@ -49,7 +49,7 @@ export function ProjectModal({ project, locale, onClose }: ProjectModalProps) {
         <DialogHeader className="p-6 pb-4 border-b border-border shrink-0">
           <div className="flex items-center justify-between gap-4 pr-8">
             <DialogTitle className="text-2xl font-semibold text-foreground">
-              {project.title}
+              {project.title[locale]}
             </DialogTitle>
             <Badge
               variant={project.isPublic ? "default" : "secondary"}
@@ -80,7 +80,7 @@ export function ProjectModal({ project, locale, onClose }: ProjectModalProps) {
           <div className="relative w-full aspect-video rounded-xl overflow-hidden bg-neutral-900">
             <Image
               src={project.images[currentImage]}
-              alt={`${project.title} - ${currentImage + 1}`}
+              alt={`${project.title[locale]} - ${currentImage + 1}`}
               fill
               className="object-contain"
               priority
@@ -125,7 +125,7 @@ export function ProjectModal({ project, locale, onClose }: ProjectModalProps) {
                 >
                   <Image
                     src={img}
-                    alt={`Thumbnail ${index + 1}`}
+                    alt={t("thumbnail", { number: index + 1 })}
                     fill
                     className="object-cover"
                   />

@@ -3,188 +3,218 @@ export const experience = [
     id: 1,
     title: {
       pt: "Desenvolvedor Full Stack",
-      en: "Full Stack Developer",
+      en: "Full-Stack Software Engineer"
     },
     company: {
       pt: "Instituto Jovem Técnico",
-      en: "Instituto Jovem Técnico",
+      en: "Instituto Jovem Técnico"
     },
     period: {
       pt: "mar/2025 — atual",
-      en: "Mar 2025 — Present",
+      en: "Mar 2025 — Present"
     },
     description: {
-      pt: "Construção e evolução de plataformas educacionais e de empregabilidade, atuando de ponta a ponta nos fluxos de jovens aprendizes, turmas e empresas parceiras.",
-      en: "Building and evolving education and employability platforms, working end to end on workflows for apprentices, classes, and partner companies.",
+      pt: "Desenvolvimento de plataformas de educação, empregabilidade e gestão de eventos, com atuação do backend ao frontend e à entrega em produção.",
+      en: "Development of education, employability, and event management platforms, working across backend, frontend, and production delivery."
     },
     highlights: {
       pt: [
-        "Desenvolvimento de um sistema do zero, incluindo modelagem de dados e conteúdo, CRUDs, regras de negócio e integração entre frontend e backend.",
-        "Criação de interfaces e componentes com Next.js, TypeScript e shadcn/ui, integrados a serviços Node.js e ao Strapi como headless CMS.",
-        "Manutenção de uma aplicação legada em PHP e JavaScript, além de testes, versionamento, automações de CI/CD e deploys na Vercel.",
+        "Desenvolvimento, em equipe de duas pessoas, de uma plataforma multi-tenant em produção com Next.js, TypeScript e Strapi/Node.js, atendendo cerca de 150 aprendizes e duas empresas parceiras.",
+        "Responsável pelos fluxos de documentos, uploads, calendário e geração dinâmica de contratos em PDF, além de manutenção pontual de um sistema escolar legado em PHP, Blade e MySQL.",
+        "Implementação do frontend e das funcionalidades centrais de uma plataforma de eventos de dança, entregue em três semanas: grupos, dançarinos, coreografias, ingressos, avaliação artística e webhooks de pagamento do Pagar.me.",
+        "Criação de pipelines de elegibilidade e moderação automática de músicas com Whisper e LLM da OpenAI, sinalizando conteúdo adulto para revisão humana em um evento para todas as idades."
       ],
       en: [
-        "Developing a system from scratch, including data and content modeling, CRUD operations, business rules, and frontend-backend integration.",
-        "Building interfaces and components with Next.js, TypeScript, and shadcn/ui, integrated with Node.js services and Strapi as a headless CMS.",
-        "Maintaining a legacy PHP and JavaScript application, as well as working with tests, version control, CI/CD automation, and Vercel deployments.",
-      ],
+        "Building a production multi-tenant platform within a two-person team using Next.js, TypeScript, and Strapi/Node.js, serving approximately 150 apprentices and two partner companies.",
+        "Owning document workflows, uploads, calendars, and dynamically generated PDF contracts, alongside periodic maintenance of a legacy school system built with PHP, Blade, and MySQL.",
+        "Implemented the frontend and core workflows of a dance event platform delivered in three weeks: groups, dancers, choreographies, tickets, artistic review, and Pagar.me payment webhooks.",
+        "Created eligibility-validation pipelines and automated music moderation with Whisper and an OpenAI LLM, flagging adult content for human review at an all-ages event."
+      ]
     },
     technologies: {
       pt: [
-        "Node.js",
         "Next.js",
         "TypeScript",
-        "JavaScript",
+        "Node.js",
         "Strapi",
-        "shadcn/ui",
         "PHP",
-        "Git/GitHub",
-        "CI/CD",
-        "Vercel",
+        "Blade",
+        "MySQL",
+        "Pagar.me",
+        "Webhooks",
+        "OpenAI",
+        "Whisper"
       ],
       en: [
-        "Node.js",
         "Next.js",
         "TypeScript",
-        "JavaScript",
+        "Node.js",
         "Strapi",
-        "shadcn/ui",
         "PHP",
-        "Git/GitHub",
-        "CI/CD",
-        "Vercel",
-      ],
-    },
+        "Blade",
+        "MySQL",
+        "Pagar.me",
+        "Webhooks",
+        "OpenAI",
+        "Whisper"
+      ]
+    }
   },
   {
     id: 2,
     title: {
       pt: "Desenvolvedor Full Stack",
-      en: "Full Stack Developer",
+      en: "Full-Stack Software Engineer"
     },
     company: {
       pt: "A.M.F Consultoria em TI",
-      en: "A.M.F IT Consulting",
+      en: "A.M.F IT Consulting"
     },
     period: {
       pt: "ago/2022 — mar/2025",
-      en: "Aug 2022 — Mar 2025",
+      en: "Aug 2022 — Mar 2025"
     },
     description: {
-      pt: "Desenvolvimento full stack de produtos nos segmentos fitness, gestão de criadores e canais digitais e análise de documentos de engenharia.",
-      en: "Full stack development of products for fitness, digital creator and channel management, and engineering document analysis.",
+      pt: "Atuação full stack em produtos terceirizados nos setores de fitness, publicação em redes sociais e análise de documentos de engenharia.",
+      en: "Backend and full-stack development across outsourced products in fitness, social media publishing, and engineering document analysis."
     },
     highlights: {
       pt: [
-        "Desenvolvimento e manutenção de APIs e sistemas com PHP 7/8, Slim, Laravel e MySQL, estruturando endpoints, controllers, services, models, DTOs, Form Requests e regras de negócio, além de refatorar código legado.",
-        "Implementação de filas/jobs e testes unitários e de feature; manutenção de microserviços Node.js com MongoDB e criação de componentes Vue.js a partir de layouts do Figma.",
-        "Participação ponta a ponta em um fluxo de análise e aprovação de documentos com Laravel, Next.js, TypeScript e MySQL, integrado a um pipeline Python/IA, além de atividades com Docker, CI/CD e AWS.",
+        "Manutenção e evolução do backend em produção de uma plataforma fitness dos EUA com PHP 7, Slim e MySQL, validação de rotas REST no Postman e participação na V2 em Laravel.",
+        "Desenvolvimento de fluxos e filas assíncronas em Laravel para publicações no YouTube, Twitter e TikTok, além de interfaces Vue.js implementadas a partir de layouts do Figma.",
+        "Implementação de CRUDs em Laravel e interfaces Next.js para uma plataforma de engenharia, integrando um pipeline Python/IA que extraía dados de plantas recebidas por e-mail para revisão por engenheiros, aprovação e assinatura eletrônica."
       ],
       en: [
-        "Developed and maintained APIs and systems with PHP 7/8, Slim, Laravel, and MySQL, structuring endpoints, controllers, services, models, DTOs, Form Requests, and business rules while refactoring legacy code.",
-        "Implemented queues/jobs and unit and feature tests; maintained Node.js microservices with MongoDB and built Vue.js components from Figma designs.",
-        "Contributed end to end to a document analysis and approval workflow with Laravel, Next.js, TypeScript, and MySQL, integrated with a Python/AI pipeline, as well as working with Docker, CI/CD, and AWS.",
-      ],
+        "Maintained and extended a U.S. fitness platform's production PHP 7/Slim/MySQL backend, validated REST routes with Postman, and contributed features to its Laravel-based v2.",
+        "Built Laravel workflows and asynchronous queues for publishing to YouTube, Twitter, and TikTok, plus Vue.js interfaces implemented from Figma designs.",
+        "Developed Laravel CRUD workflows and Next.js interfaces for an engineering platform, integrating a Python vision-AI pipeline that extracted data from emailed plans for engineer review, approval, and electronic signature."
+      ]
     },
     technologies: {
       pt: [
         "PHP",
         "Laravel",
         "Slim Framework",
-        "Node.js",
-        "Next.js",
-        "Vue.js",
-        "TypeScript",
         "MySQL",
-        "MongoDB",
-        "Python/IA",
-        "Docker",
-        "AWS",
-        "CI/CD",
-        "Testes",
+        "Vue.js",
+        "Next.js",
+        "Python",
+        "IA/LLMs",
+        "APIs REST",
+        "Filas assíncronas",
+        "Postman",
+        "Figma"
       ],
       en: [
         "PHP",
         "Laravel",
         "Slim Framework",
-        "Node.js",
-        "Next.js",
-        "Vue.js",
-        "TypeScript",
         "MySQL",
-        "MongoDB",
-        "Python/AI",
-        "Docker",
-        "AWS",
-        "CI/CD",
-        "Tests",
-      ],
-    },
+        "Vue.js",
+        "Next.js",
+        "Python",
+        "AI/LLMs",
+        "REST APIs",
+        "Async queues",
+        "Postman",
+        "Figma"
+      ]
+    }
   },
   {
     id: 3,
     title: {
       pt: "Desenvolvedor Full Stack (Freelancer)",
-      en: "Full Stack Developer (Freelance)",
+      en: "Freelance Full-Stack Developer"
     },
     company: {
       pt: "Salute Ltda.",
-      en: "Salute Ltd.",
+      en: "Salute Ltda."
     },
     period: {
-      pt: "jan/2025 — jul/2025",
-      en: "Jan 2025 — Jul 2025",
+      pt: "jan/2025 — ago/2025",
+      en: "Jan 2025 — Aug 2025"
     },
     description: {
-      pt: "Desenvolvimento de um dashboard para centralizar integrações de e-commerce com Mercado Livre e Bling.",
-      en: "Developed a dashboard to centralize e-commerce integrations with Mercado Livre and Bling.",
+      pt: "Desenvolvimento individual de um dashboard autenticado para centralizar estoque, vendas e faturamento de e-commerce.",
+      en: "Independently developed an authenticated dashboard to centralize e-commerce inventory, sales, and total revenue."
     },
     highlights: {
       pt: [
-        "Construção do backend e das integrações de APIs com PHP e Laravel.",
-        "Implementação da interface administrativa com Blade e persistência de dados em MySQL.",
+        "Construção da aplicação com PHP, Laravel, Blade e PostgreSQL, da modelagem de dados à implantação em produção.",
+        "Integração das APIs de duas contas do Mercado Livre e do Bling ERP em uma única visão operacional.",
+        "Entrega de uma solução ainda utilizada pelo cliente, com manutenção e melhorias pontuais após o lançamento."
       ],
       en: [
-        "Built the backend and API integrations with PHP and Laravel.",
-        "Implemented the admin interface with Blade and MySQL data persistence.",
-      ],
+        "Built and deployed the application with PHP, Laravel, Blade, and PostgreSQL, from data modeling to production launch.",
+        "Integrated APIs from two Mercado Livre accounts and Bling ERP into a single operational view.",
+        "Delivered a production system still used by the client, with occasional maintenance and feature updates after launch."
+      ]
     },
     technologies: {
-      pt: ["PHP", "Laravel", "Blade", "MySQL", "APIs REST"],
-      en: ["PHP", "Laravel", "Blade", "MySQL", "REST APIs"],
-    },
+      pt: [
+        "PHP",
+        "Laravel",
+        "Blade",
+        "PostgreSQL",
+        "APIs REST",
+        "Mercado Livre",
+        "Bling ERP"
+      ],
+      en: [
+        "PHP",
+        "Laravel",
+        "Blade",
+        "PostgreSQL",
+        "REST APIs",
+        "Mercado Livre",
+        "Bling ERP"
+      ]
+    }
   },
   {
     id: 4,
     title: {
-      pt: "Desenvolvedor Full Stack (Freelancer)",
-      en: "Full Stack Developer (Freelance)",
+      pt: "Desenvolvedor Web (Freelancer)",
+      en: "Freelance Web Developer"
     },
     company: {
-      pt: "Darwin Pet",
-      en: "Darwin Pet",
+      pt: "Charles Darwin Pet",
+      en: "Charles Darwin Pet"
     },
     period: {
       pt: "jan/2025 — ago/2025",
-      en: "Jan 2025 — Aug 2025",
+      en: "Jan 2025 — Aug 2025"
     },
     description: {
-      pt: "Sustentação e evolução de um e-commerce na plataforma Loja Integrada.",
-      en: "Maintained and evolved an e-commerce store on the Loja Integrada platform.",
+      pt: "Customização de e-commerce na Loja Integrada e criação de uma landing page institucional.",
+      en: "Customized an e-commerce storefront on Loja Integrada and built a separate brand landing page."
     },
     highlights: {
       pt: [
-        "Manutenção da loja, ajustes de interface e suporte à operação do e-commerce.",
-        "Criação de uma página institucional responsiva com Bootstrap, HTML, CSS e JavaScript.",
+        "Adaptação do template existente da loja e implementação de funcionalidades sob demanda com HTML5, CSS3 e JavaScript puro.",
+        "Criação e publicação de uma landing page institucional com HTML, CSS e JavaScript.",
+        "Manutenção pontual e atualizações solicitadas pelo cliente nas duas propriedades web após o lançamento."
       ],
       en: [
-        "Maintained the store, improved its interface, and supported e-commerce operations.",
-        "Built a responsive corporate page with Bootstrap, HTML, CSS, and JavaScript.",
-      ],
+        "Adapted the store's existing template and added targeted features using HTML5, CSS3, and vanilla JavaScript.",
+        "Built and launched a separate brand landing page using HTML, CSS, and vanilla JavaScript.",
+        "Provided occasional maintenance and client-requested updates for both live web properties after launch."
+      ]
     },
     technologies: {
-      pt: ["Loja Integrada", "Bootstrap", "HTML", "CSS", "JavaScript"],
-      en: ["Loja Integrada", "Bootstrap", "HTML", "CSS", "JavaScript"],
-    },
-  },
+      pt: [
+        "Loja Integrada",
+        "HTML5",
+        "CSS3",
+        "JavaScript"
+      ],
+      en: [
+        "Loja Integrada",
+        "HTML5",
+        "CSS3",
+        "JavaScript"
+      ]
+    }
+  }
 ];

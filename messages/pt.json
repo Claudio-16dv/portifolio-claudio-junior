@@ -21,14 +21,16 @@
     "education": "Educação",
     "experience": "Experiência",
     "skills": "Stack de Tecnologias",
-    "technologyStack": "Tecnologias utilizadas"
+    "technologyStack": "Tecnologias utilizadas",
+    "certifications": "Cursos e certificações",
+    "languages": "Idiomas"
   },
   "portfolio": {
     "title": "Portfólio",
     "all": "Todos",
     "webDesign": "Web Design",
     "applications": "Aplicações",
-    "webDevelopment": "Web Development",
+    "webDevelopment": "Desenvolvimento Web",
     "selectCategory": "Selecionar categoria",
     "viewProject": "Ver Projeto",
     "private": "Privado",
@@ -36,7 +38,8 @@
     "technologies": "Tecnologias",
     "description": "Descrição",
     "visitSite": "Visitar Site",
-    "viewCode": "Ver Código"
+    "viewCode": "Ver Código",
+    "thumbnail": "Miniatura {number}"
   },
   "theme": {
     "light": "Claro",
@@ -45,5 +48,9 @@
   },
   "language": {
     "toggle": "Mudar idioma"
+  },
+  "metadata": {
+    "title": "Claudio Junior | Desenvolvedor Full Stack",
+    "description": "Desenvolvedor Full Stack com 4 anos de experiência em PHP/Laravel, Node.js, TypeScript, Vue.js e Next.js. Plataformas multi-tenant, APIs, integrações e IA."
   }
 }

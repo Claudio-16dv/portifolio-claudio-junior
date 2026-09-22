@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import { ChevronDown, Mail, Phone, MapPin } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { personalInfo } from "@/lib/data";
@@ -11,13 +11,14 @@ import { LanguageToggle } from "./language-toggle";
 export function Sidebar() {
   const [isExpanded, setIsExpanded] = useState(false);
   const t = useTranslations("sidebar");
+  const locale = useLocale() as "pt" | "en";
 
   return (
     <aside
       className={cn(
         "bg-card border border-border rounded-2xl p-4 shadow-lg transition-all duration-500 overflow-hidden",
         "xl:sticky xl:top-[60px] xl:h-fit xl:pt-[60px] xl:min-w-[320px] xl:w-[320px]",
-        isExpanded ? "max-h-[500px]" : "max-h-[112px]",
+        isExpanded ? "max-h-[500px]" : "max-h-[160px]",
         "sm:max-h-[180px] sm:p-[30px]",
         isExpanded && "sm:max-h-[600px]",
         "xl:max-h-none"
@@ -37,13 +38,13 @@ export function Sidebar() {
         {/* Name & Title */}
         <div className="xl:text-center">
           <h1 className="text-foreground text-lg sm:text-xl font-light tracking-wide mb-2 xl:whitespace-nowrap">
-            Claudio Junior
+            {personalInfo.name}
           </h1>
-          <div className="flex items-center gap-2 flex-nowrap xl:justify-center">
-            <p className="text-foreground/90 bg-secondary text-xs font-light px-3 py-1 rounded-lg whitespace-nowrap">
-              {personalInfo.title}
+          <div className="flex items-center gap-2 flex-wrap xl:justify-center">
+            <p className="text-foreground/90 bg-secondary text-xs font-light px-3 py-1 rounded-lg">
+              {personalInfo.title[locale]}
             </p>
-            <p className="text-foreground/90 bg-secondary text-xs font-light px-3 py-1 rounded-lg whitespace-nowrap">
+            <p className="text-foreground/90 bg-secondary text-xs font-light px-3 py-1 rounded-lg">
               {t("seniority")}
             </p>
           </div>
@@ -96,7 +97,7 @@ export function Sidebar() {
           <ContactItem
             icon={<MapPin className="w-4 h-4" />}
             label={t("location")}
-            value={personalInfo.location}
+            value={personalInfo.location[locale]}
           />
         </ul>
 

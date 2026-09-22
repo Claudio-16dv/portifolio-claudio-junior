@@ -93,7 +93,7 @@ export function Portfolio() {
               <figure className="relative w-full aspect-video rounded-2xl overflow-hidden mb-4 bg-secondary">
                 <img
                   src={project.thumbnail}
-                  alt={project.title}
+                  alt={project.title[locale]}
                   className="w-full h-full object-cover"
                 />
 
@@ -105,7 +105,7 @@ export function Portfolio() {
                 </div>
               </figure>
 
-              <h3 className="text-foreground font-medium mb-1 ml-2">{project.title}</h3>
+              <h3 className="text-foreground font-medium mb-1 ml-2">{project.title[locale]}</h3>
               <p className="text-muted-foreground text-sm ml-2">
                 {t(categories.find((c) => c.value === project.category)?.labelKey || "all")}
               </p>

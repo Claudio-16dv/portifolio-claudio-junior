@@ -21,7 +21,9 @@
     "education": "Education",
     "experience": "Experience",
     "skills": "Technology Stack",
-    "technologyStack": "Technologies used"
+    "technologyStack": "Technologies used",
+    "certifications": "Courses & Certifications",
+    "languages": "Languages"
   },
   "portfolio": {
     "title": "Portfolio",
@@ -36,7 +38,8 @@
     "technologies": "Technologies",
     "description": "Description",
     "visitSite": "Visit Site",
-    "viewCode": "View Code"
+    "viewCode": "View Code",
+    "thumbnail": "Thumbnail {number}"
   },
   "theme": {
     "light": "Light",
@@ -45,5 +48,9 @@
   },
   "language": {
     "toggle": "Change language"
+  },
+  "metadata": {
+    "title": "Claudio Junior | Full-Stack Software Engineer",
+    "description": "Full-stack software engineer with 4 years of experience in PHP/Laravel, Node.js, TypeScript, Vue.js, and Next.js. Multi-tenant platforms, APIs, integrations, and AI."
   }
 }

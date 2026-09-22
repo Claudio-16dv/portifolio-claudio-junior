@@ -2,7 +2,10 @@ import type { Project } from "../types";
 
 export const charlesDarwin: Project = {
   id: "charles-darwin",
-  title: "Charles Darwin Food - Institucional",
+  title: {
+    pt: "Charles Darwin Food — Institucional",
+    en: "Charles Darwin Food — Brand Website",
+  },
   category: "web-design",
   thumbnail: "/projects/charles-darwin/charles-darwin-1.png",
   images: [
@@ -17,16 +20,10 @@ export const charlesDarwin: Project = {
   technologies: [
     "HTML5",
     "CSS3",
-    "JavaScript",
-    "jQuery",
-    "Bootstrap 3",
-    "WOW.js",
-    "Animate.css",
-    "Firebase Hosting",
-    "FormSubmit",
+    "JavaScript"
   ],
   description: {
-    pt: "Site institucional para a Charles Darwin Food, empresa de petiscos naturais e produtos de bem-estar para cães. Apresenta a marca, linha de produtos (Instinto Ancestral e Queijo do Himalaia) e direciona para o e-commerce. Inclui formulário de contato integrado e links para redes sociais.",
-    en: "Institutional website for Charles Darwin Food, a company specializing in natural snacks and wellness products for dogs. Showcases the brand, product lines (Instinto Ancestral and Himalayan Cheese) and directs to the e-commerce. Includes integrated contact form and social media links.",
+    pt: "Landing page institucional criada e publicada para uma marca de petiscos naturais e produtos de bem-estar para cães. Desenvolvida com HTML, CSS e JavaScript para apresentar a marca e seus produtos e direcionar visitantes ao e-commerce. Inclui manutenção pontual e atualizações solicitadas pelo cliente após o lançamento.",
+    en: "Brand landing page built and launched for a natural dog treats and wellness brand. Developed with HTML, CSS, and JavaScript to introduce the brand and its products and direct visitors to the online store. Includes occasional maintenance and client-requested updates after launch."
   },
 };

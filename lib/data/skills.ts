@@ -1,74 +1,150 @@
 export const skills = [
   {
     category: {
-      pt: "Backend e APIs",
-      en: "Backend & APIs",
+      pt: "Backend e integrações",
+      en: "Backend & Integrations"
     },
     technologies: {
-      pt: ["PHP", "Laravel", "Slim Framework", "Node.js", "Strapi", "APIs REST"],
-      en: ["PHP", "Laravel", "Slim Framework", "Node.js", "Strapi", "REST APIs"],
-    },
+      pt: [
+        "PHP",
+        "Laravel",
+        "Slim Framework",
+        "Node.js",
+        "NestJS",
+        "APIs REST",
+        "Webhooks",
+        "Filas assíncronas"
+      ],
+      en: [
+        "PHP",
+        "Laravel",
+        "Slim Framework",
+        "Node.js",
+        "NestJS",
+        "REST APIs",
+        "Webhooks",
+        "Async queues"
+      ]
+    }
   },
   {
     category: {
       pt: "Frontend",
-      en: "Frontend",
+      en: "Frontend"
     },
     technologies: {
       pt: [
-        "Next.js",
-        "React",
-        "Vue.js",
         "TypeScript",
         "JavaScript",
-        "shadcn/ui",
+        "Vue.js",
+        "React",
+        "Next.js",
         "Blade",
+        "HTML5",
+        "CSS3",
+        "SCSS",
+        "shadcn/ui"
       ],
       en: [
-        "Next.js",
-        "React",
-        "Vue.js",
         "TypeScript",
         "JavaScript",
-        "shadcn/ui",
+        "Vue.js",
+        "React",
+        "Next.js",
         "Blade",
-      ],
-    },
+        "HTML5",
+        "CSS3",
+        "SCSS",
+        "shadcn/ui"
+      ]
+    }
   },
   {
     category: {
-      pt: "Dados e IA",
-      en: "Data & AI",
+      pt: "Dados e CMS",
+      en: "Data & CMS"
     },
     technologies: {
-      pt: ["MySQL", "MongoDB", "Python", "Integrações com IA/LLMs"],
-      en: ["MySQL", "MongoDB", "Python", "AI/LLM integrations"],
+      pt: [
+        "PostgreSQL",
+        "MySQL",
+        "MongoDB",
+        "Strapi CMS"
+      ],
+      en: [
+        "PostgreSQL",
+        "MySQL",
+        "MongoDB",
+        "Strapi CMS"
+      ]
+    }
+  },
+  {
+    category: {
+      pt: "IA e automação",
+      en: "AI & Automation"
     },
+    technologies: {
+      pt: [
+        "Python",
+        "OpenAI",
+        "Whisper",
+        "Integrações com IA/LLMs",
+        "Pipelines com revisão humana"
+      ],
+      en: [
+        "Python",
+        "OpenAI",
+        "Whisper",
+        "AI/LLM integrations",
+        "Human-in-the-loop pipelines"
+      ]
+    }
   },
   {
     category: {
       pt: "Infraestrutura e qualidade",
-      en: "Infrastructure & Quality",
+      en: "Infrastructure & Quality"
     },
     technologies: {
       pt: [
         "Docker",
-        "AWS (EC2/S3)",
+        "AWS",
         "CI/CD",
         "Git/GitHub",
-        "Testes unitários e de feature",
-        "Linux/Ubuntu",
-        "Vercel",
+        "Postman",
+        "Testes de API"
       ],
       en: [
         "Docker",
-        "AWS (EC2/S3)",
+        "AWS",
         "CI/CD",
         "Git/GitHub",
-        "Unit & feature tests",
-        "Linux/Ubuntu",
-        "Vercel",
-      ],
-    },
+        "Postman",
+        "API testing"
+      ]
+    }
   },
+  {
+    category: {
+      pt: "Design e práticas",
+      en: "Design & Practices"
+    },
+    technologies: {
+      pt: [
+        "UX/UI Design",
+        "Figma",
+        "Interfaces responsivas",
+        "Scrum",
+        "Kanban"
+      ],
+      en: [
+        "UX/UI Design",
+        "Figma",
+        "Responsive interfaces",
+        "Scrum",
+        "Kanban"
+      ]
+    }
+  }
 ];

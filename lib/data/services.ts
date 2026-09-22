@@ -4,47 +4,47 @@ export const services = [
     icon: "code",
     title: {
       pt: "Desenvolvimento Web",
-      en: "Web Development",
+      en: "Web Development"
     },
     description: {
-      pt: "Aplicações completas, do levantamento das regras de negócio ao backend, frontend, testes e deploy.",
-      en: "Complete applications, from business rule discovery to backend, frontend, testing, and deployment.",
-    },
+      pt: "Aplicações web e plataformas multi-tenant, da modelagem de dados ao frontend e à entrega em produção.",
+      en: "Web applications and multi-tenant platforms, from data modeling to frontend development and production delivery."
+    }
   },
   {
     id: 2,
     icon: "server",
     title: {
-      pt: "Backend & APIs",
-      en: "Backend & APIs",
+      pt: "Backend e APIs",
+      en: "Backend & APIs"
     },
     description: {
-      pt: "APIs com PHP, Laravel e Node.js, filas, regras de negócio, integrações e dados em MySQL ou MongoDB.",
-      en: "APIs with PHP, Laravel, and Node.js, including queues, business rules, integrations, and MySQL or MongoDB data.",
-    },
+      pt: "Backend com PHP, Laravel e Node.js, APIs REST, webhooks de pagamento, filas assíncronas e integrações entre sistemas.",
+      en: "Backend development with PHP, Laravel, and Node.js, REST APIs, payment webhooks, asynchronous queues, and system integrations."
+    }
   },
   {
     id: 3,
     icon: "palette",
     title: {
-      pt: "Frontend & UI",
-      en: "Frontend & UI",
+      pt: "Frontend e UI",
+      en: "Frontend & UI"
     },
     description: {
-      pt: "Interfaces responsivas e componentizadas com Next.js, React, Vue.js, TypeScript, Blade e shadcn/ui.",
-      en: "Responsive, component-based interfaces with Next.js, React, Vue.js, TypeScript, Blade, and shadcn/ui.",
-    },
+      pt: "Interfaces responsivas com Vue.js, React, Next.js, TypeScript, Blade e shadcn/ui, incluindo implementação de layouts do Figma.",
+      en: "Responsive interfaces with Vue.js, React, Next.js, TypeScript, Blade, and shadcn/ui, including implementation of Figma designs."
+    }
   },
   {
     id: 4,
     icon: "smartphone",
     title: {
-      pt: "Integrações & Automação",
-      en: "Integrations & Automation",
+      pt: "IA e automação",
+      en: "AI & Automation"
     },
     description: {
-      pt: "Integrações de e-commerce, webhooks, pipelines de documentos com Python/IA e automações de entrega.",
-      en: "E-commerce integrations, webhooks, Python/AI document pipelines, and delivery automation.",
-    },
-  },
+      pt: "Pipelines com Python e IA/LLMs para extração de dados de documentos e moderação de áudio com Whisper e OpenAI, com revisão humana.",
+      en: "Python and AI/LLM pipelines for document data extraction and audio moderation with Whisper and OpenAI, with human review."
+    }
+  }
 ];

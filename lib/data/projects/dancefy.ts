@@ -2,7 +2,10 @@ import type { Project } from "../types";
 
 export const dancefy: Project = {
   id: "dancefy-events",
-  title: "Dancefy Events",
+  title: {
+    pt: "Dancefy Events",
+    en: "Dancefy Events",
+  },
   category: "applications",
   thumbnail: "/projects/district/tela-login.png",
   images: [
@@ -36,18 +39,21 @@ export const dancefy: Project = {
   isPublic: false,
   liveUrl: "https://www.dancefy.com.br/H2D26/login",
   technologies: [
-    "Next.js 14",
-    "React 18",
+    "Next.js",
+    "React",
     "TypeScript",
     "Tailwind CSS",
-    "Shadcn/UI",
+    "shadcn/ui",
     "Strapi CMS",
     "Pagar.me",
+    "Webhooks",
+    "OpenAI",
+    "Whisper",
     "Zod",
-    "Vitest",
+    "Vitest"
   ],
   description: {
-    pt: "Plataforma completa para gestão de eventos de dança, desenvolvida para o Hip Hop District. Gerencia inscrições individuais e de grupos competidores, com sistema de créditos, pipeline de validação em camadas, controle de faixa etária inteligente e integração com Pagar.me. Arquitetura DDD com 27+ testes unitários.",
-    en: "Complete platform for dance event management, developed for Hip Hop District. Manages individual and competitor group registrations, with credit system, layered validation pipeline, smart age range control and Pagar.me integration. DDD architecture with 27+ unit tests.",
+    pt: "Plataforma de gestão de eventos de dança entregue em três semanas. Atuação no frontend e nas funcionalidades centrais: grupos, dançarinos, coreografias, ingressos, avaliação artística e pagamentos via webhooks do Pagar.me. Inclui pipelines de validação de elegibilidade e moderação automática de músicas com Whisper e LLM da OpenAI, sinalizando conteúdo adulto para revisão humana em um evento para todas as idades.",
+    en: "Dance event management platform delivered in three weeks. Contributed the frontend and core workflows for groups, dancers, choreographies, tickets, artistic review, and payments through Pagar.me webhooks. Includes eligibility-validation pipelines and automated music moderation with Whisper and an OpenAI LLM, flagging adult content for human review at an all-ages event."
   },
 };
